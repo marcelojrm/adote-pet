@@ -1,7 +1,6 @@
 {
   "name": "adote-pet",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "Aplicativo web para adoção, divulgação e apadrinhamento de pets",
   "main": "index.html",
   "scripts": {
@@ -26,20 +25,3 @@
   }
 }
 
-=======
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2",
-    "react-scripts": "5.0.1",
-    "tailwindcss": "^3.3.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  }
-}
->>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
