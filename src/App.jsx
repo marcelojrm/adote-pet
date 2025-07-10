@@ -1,92 +1,113 @@
-
-import { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 
-const TelaLogin = () => {
+function Login() {
   const navigate = useNavigate();
-
   return (
-    <div className="w-[360px] h-[800px] bg-[#99A892] relative">
-      <h1 className="absolute left-[103px] top-[102px] text-[40px] font-normal font-['Average'] leading-[49px] text-center">ADOTE PET</h1>
-
-      <div className="absolute w-[256px] h-[54px] left-[52px] top-[373px] bg-[#D9D9D9] rounded-[12px]" />
-      <div className="absolute w-[256px] h-[54px] left-[52px] top-[473px] bg-[#D9D9D9] rounded-[12px]" />
-      <div className="absolute w-[256px] h-[54px] left-[52px] top-[570px] bg-[#D9D9D9] rounded-[12px]" />
-
-      <p className="absolute left-[158px] top-[392px] text-[12px] font-medium text-black text-center">Usuário</p>
-      <p className="absolute left-[162px] top-[492px] text-[12px] font-medium text-black text-center">Senha</p>
-      <p className="absolute left-[148px] top-[589px] text-[12px] font-medium text-black text-center">Criar conta</p>
-
+    <div className="h-screen bg-green-300 flex flex-col items-center justify-center space-y-6">
+      <h1 className="text-4xl font-average">ADOTE PET</h1>
       <button
-        className="absolute left-[72px] top-[650px] bg-black text-white py-2 px-4 rounded"
-        onClick={() => navigate('/home')}
+        onClick={() => navigate('/main')}
+        className="bg-gray-200 px-8 py-3 rounded-md font-semibold"
       >
         Entrar
       </button>
+      <button
+        onClick={() => alert('Função Criar Conta ainda não implementada')}
+        className="bg-gray-200 px-8 py-3 rounded-md font-semibold"
+      >
+        Criar Conta
+      </button>
     </div>
   );
-};
+}
 
-const TelaHome = () => {
+function Main() {
   const navigate = useNavigate();
-
   return (
-    <div className="w-[360px] h-[800px] bg-[#99A892] relative">
-      <p className="absolute left-[299px] top-[8px] text-[10px] font-['Average'] text-black text-center">ADOTE PET</p>
-
+    <div className="h-screen bg-green-300 p-4 flex flex-col items-center space-y-4">
+      <h2 className="text-xl font-semibold">Menu Principal</h2>
       <button
-        className="absolute w-[256px] h-[54px] left-[56px] top-[374px] bg-[#D9D9D9] rounded-[12px] text-black"
-        onClick={() => navigate('/apadrinhar')}
+        onClick={() => navigate('/quero-adotar')}
+        className="w-full max-w-xs bg-gray-200 py-4 rounded-md font-semibold"
       >
-        Quero Apadrinhar
+        Quero Adotar
       </button>
       <button
-        className="absolute w-[256px] h-[54px] left-[56px] top-[469px] bg-[#D9D9D9] rounded-[12px] text-black"
-        onClick={() => navigate('/divulgar')}
+        onClick={() => alert('Quero Divulgar - tela em construção')}
+        className="w-full max-w-xs bg-gray-200 py-4 rounded-md font-semibold"
       >
         Quero Divulgar
       </button>
       <button
-        className="absolute w-[256px] h-[54px] left-[56px] top-[564px] bg-[#D9D9D9] rounded-[12px] text-black"
-        onClick={() => navigate('/mapa')}
+        onClick={() => alert('Quero Apadrinhar - tela em construção')}
+        className="w-full max-w-xs bg-gray-200 py-4 rounded-md font-semibold"
       >
-        Quero Adotar
+        Quero Apadrinhar
       </button>
     </div>
   );
-};
+}
 
-const TelaApadrinhamento = () => {
-  const navigate = useNavigate();
+function QueroAdotar() {
   return (
-    <div className="w-[360px] h-[800px] bg-[#99A892] relative">
-      <button className="absolute left-[16px] top-[16px] text-sm underline" onClick={() => navigate(-1)}>← Voltar</button>
-      <p className="absolute left-[20px] top-[90px] text-[13px] font-semibold text-black text-center">
-        Para apadrinhar qualquer animal escolha uma opção:
-      </p>
-      <div className="absolute w-[256px] h-[54px] left-[51px] top-[154px] bg-[#D9D9D9] rounded-[12px] flex items-center justify-center">
-        Básico - R$ 35,00
-      </div>
-      <div className="absolute w-[256px] h-[57px] left-[51px] top-[198px] bg-[#D9D9D9] rounded-[12px] p-2 text-[14px]">
-        Médio – R$ 60,00 para ajudar na alimentação, vacinas e vermífugos.
-      </div>
-      <div className="absolute w-[256px] h-[57px] left-[51px] top-[259px] bg-[#D9D9D9] rounded-[12px] p-2 text-[14px]">
-        Total – R$ 100,00 para todos os gastos como casinhas, brinquedos, veterinários etc.
-      </div>
-      <div className="absolute w-[256px] h-[57px] left-[51px] top-[354px] bg-[#D9D9D9] rounded-[12px] p-2 text-[14px]">
-        Contribuir com quanto puder ou desejar.
+    <div className="h-screen bg-green-300 p-4">
+      <h2 className="text-xl font-semibold mb-4">Mapa - Quero Adotar</h2>
+      <div className="w-full h-96 bg-gray-100 flex items-center justify-center border-2 border-gray-400 rounded-md">
+        <p className="text-gray-500">[Mapa placeholder]</p>
       </div>
     </div>
   );
-};
+}
+
+function QueroDivulgar() {
+  return (
+    <div className="h-screen bg-green-300 p-4 space-y-4">
+      <h2 className="text-xl font-semibold">Quero Divulgar - Cadastro do animal</h2>
+      <form className="max-w-md mx-auto bg-gray-100 p-4 rounded-md space-y-4">
+        <input
+          type="text"
+          placeholder="Nome do animal"
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <input
+          type="text"
+          placeholder="Espécie"
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <input
+          type="text"
+          placeholder="Idade"
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <input
+          type="text"
+          placeholder="Sexo"
+          className="w-full p-2 border border-gray-300 rounded"
+        />
+        <button
+          type="submit"
+          className="bg-gray-300 w-full py-2 rounded font-semibold"
+          onClick={e => {
+            e.preventDefault();
+            alert('Cadastro enviado (simulado)');
+          }}
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+  );
+}
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<TelaLogin />} />
-        <Route path="/home" element={<TelaHome />} />
-        <Route path="/apadrinhar" element={<TelaApadrinhamento />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/quero-adotar" element={<QueroAdotar />} />
+        <Route path="/quero-divulgar" element={<QueroDivulgar />} />
       </Routes>
     </Router>
   );
