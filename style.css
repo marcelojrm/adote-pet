@@ -1,4 +1,5 @@
 /* Reset e Estilos Globais */
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -19,10 +20,22 @@ button {
 
 input, select, textarea {
     font-family: inherit;
+=======
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #333; /* Fundo escuro para ver a área do app */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 /* Estrutura das Telas */
 .screen {
+<<<<<<< HEAD
     display: none;
     width: 100%;
     max-width: 400px;
@@ -41,6 +54,29 @@ input, select, textarea {
     display: flex;
     opacity: 1;
 }
+=======
+    display: none; /* Esconde todas as telas por padrão */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 100vh; /* Garante que a tela ocupe no mínimo toda a altura */
+    background-color: #99A892;
+    display: flex; /* Mudei para flex aqui, para ser sobrescrito depois */
+    flex-direction: column;
+    /* REMOVIDO: position: absolute e as propriedades top, left, transform */
+}
+
+/* Lógica de Navegação: esconde todos... */
+body > .screen {
+    display: none;
+}
+/* ...e mostra apenas o ativo (target) ou o primeiro */
+.screen:target,
+body > .screen:first-of-type {
+    display: flex;
+}
+
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 
 /* Cabeçalhos */
 .main-header {
@@ -54,13 +90,20 @@ input, select, textarea {
     font-weight: 400;
     line-height: 1.2;
     color: #000;
+<<<<<<< HEAD
     margin: 0;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .app-header {
     display: flex;
     align-items: flex-start;
+<<<<<<< HEAD
     padding: 20px;
+=======
+    padding: 35px 20px 20px 20px;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
     gap: 15px;
 }
 
@@ -69,10 +112,15 @@ input, select, textarea {
     align-items: center;
     padding: 15px 20px;
     color: black;
+<<<<<<< HEAD
+=======
+    gap: 15px;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .page-header h2 {
     margin: 0;
+<<<<<<< HEAD
     font-size: 16px;
     font-weight: 600;
     flex-grow: 1;
@@ -80,6 +128,16 @@ input, select, textarea {
     letter-spacing: 0.2em;
 }
 
+=======
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 /* Títulos de Canto */
 .app-title-corner {
     font-size: 10px;
@@ -87,7 +145,10 @@ input, select, textarea {
     text-align: center;
     color: #000;
     margin-left: auto;
+<<<<<<< HEAD
     line-height: 1.2;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 /* Conteúdo Principal */
@@ -98,11 +159,15 @@ input, select, textarea {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+<<<<<<< HEAD
     flex: 1;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .content-padding {
     padding: 20px;
+<<<<<<< HEAD
     flex: 1;
 }
 
@@ -114,6 +179,19 @@ input, select, textarea {
     flex: 1;
 }
 
+=======
+}
+
+.content-form {
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 /* Componentes Específicos */
 
 /* Tela de Login (Tela 1) */
@@ -125,6 +203,7 @@ input, select, textarea {
     gap: 15px;
 }
 
+<<<<<<< HEAD
 .input-field {
     background: #D9D9D9;
     border: none;
@@ -141,6 +220,9 @@ input, select, textarea {
 }
 
 .login-button, .create-account-button {
+=======
+.button-like-input {
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
     background: #D9D9D9;
     border-radius: 12px;
     padding: 18px;
@@ -148,12 +230,15 @@ input, select, textarea {
     font-size: 14px;
     font-weight: 500;
     color: #000;
+<<<<<<< HEAD
     width: 100%;
     transition: background-color 0.2s ease;
 }
 
 .login-button:hover, .create-account-button:hover {
     background: #c9c9c9;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .checkbox-container {
@@ -167,11 +252,14 @@ input, select, textarea {
 
 .checkbox-container label {
     font-size: 12px;
+<<<<<<< HEAD
     cursor: pointer;
 }
 
 .checkbox-container input[type="checkbox"] {
     cursor: pointer;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 /* Tela Principal (Tela 2) e Perfil (Tela 6) */
@@ -182,10 +270,13 @@ input, select, textarea {
     gap: 8px;
     font-size: 12px;
     font-weight: 500;
+<<<<<<< HEAD
     background: none;
     border: none;
     cursor: pointer;
     color: inherit;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .profile-pic {
@@ -195,26 +286,56 @@ input, select, textarea {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+/* AJUSTES NO HEADER DA TELA DE PERFIL */
+.profile-header .profile-title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    flex-grow: 1; /* Para empurrar o título do canto */
+    margin-right: -40px; /* Compensa o espaço do botão de voltar */
+}
+.profile-pic-header {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .menu-options, .menu-options-profile {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+    margin-top: 50px;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .menu-button, .menu-button-profile {
     width: 80%;
     max-width: 300px;
     background: #D9D9D9;
+<<<<<<< HEAD
     border: none;
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
     border-radius: 12px;
     padding: 18px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     color: black;
+<<<<<<< HEAD
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
@@ -226,18 +347,26 @@ input, select, textarea {
 
 .menu-button:active, .menu-button-profile:active {
     transform: translateY(0);
+=======
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .username {
     font-size: 16px;
     font-weight: 400;
+<<<<<<< HEAD
     margin: 40px 0;
     text-align: center;
+=======
+    margin-top: 40px;
+    margin-bottom: 40px;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 .menu-options-profile {
     gap: 15px;
     margin-top: 0;
+<<<<<<< HEAD
 }
 
 .menu-button-profile {
@@ -267,21 +396,38 @@ input, select, textarea {
     top: 35px;
     left: 20px;
     margin-right: 0;
+=======
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu-button-profile {
+     width: 100%;
+     max-width: none;
+     border-radius: 8px;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 }
 
 /* Tela de Adoção (Mapa - Tela 3) */
 .map-container {
     width: 100%;
+<<<<<<< HEAD
     height: calc(100vh - 60px);
     position: relative;
 }
 
+=======
+    flex-grow: 1; /* Faz o mapa ocupar o espaço restante */
+    position: relative;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .search-bar {
     position: absolute;
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
+<<<<<<< HEAD
     z-index: 10;
 }
 
@@ -299,17 +445,38 @@ input, select, textarea {
     color: #666;
 }
 
+=======
+    background: rgba(217, 217, 217, 0.8);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #333;
+    z-index: 10;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .map-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 /* Tela de Divulgação (Formulário - Tela 4) */
+=======
+
+/* Tela de Divulgação (Formulário - Tela 4) */
+.back-link {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .divulgar-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
+<<<<<<< HEAD
     padding-bottom: 20px;
 }
 
@@ -319,11 +486,20 @@ input, select, textarea {
     margin-bottom: 5px;
 }
 
+=======
+}
+.divulgar-form label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .form-input, .form-textarea {
     width: 100%;
     background: #D9D9D9;
     border: none;
     border-radius: 12px;
+<<<<<<< HEAD
     padding: 12px;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -342,10 +518,21 @@ input, select, textarea {
     min-height: 80px;
 }
 
+=======
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .form-row {
     display: flex;
     gap: 15px;
 }
+<<<<<<< HEAD
 
 .form-group {
     flex: 1;
@@ -353,19 +540,31 @@ input, select, textarea {
     flex-direction: column;
 }
 
+=======
+.form-group {
+    flex: 1;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .file-upload {
     display: flex;
     align-items: center;
     gap: 10px;
     background: #D9D9D9;
+<<<<<<< HEAD
     padding: 8px 12px;
     border-radius: 12px;
 }
 
+=======
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .file-button {
     background-color: #aaa;
     color: black;
     border: none;
+<<<<<<< HEAD
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -385,6 +584,17 @@ input, select, textarea {
 .submit-button {
     background: #D9D9D9;
     border: none;
+=======
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.file-upload span {
+    font-size: 12px;
+}
+.submit-button {
+    background: #D9D9D9;
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
     border-radius: 12px;
     padding: 15px;
     text-align: center;
@@ -393,6 +603,7 @@ input, select, textarea {
     color: #000;
     width: 160px;
     margin: 20px auto;
+<<<<<<< HEAD
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
@@ -405,6 +616,10 @@ input, select, textarea {
 .submit-button:active {
     transform: translateY(0);
 }
+=======
+}
+
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 
 /* Tela de Apadrinhamento (Tela 5) */
 .apadrinhar-intro {
@@ -412,6 +627,7 @@ input, select, textarea {
     font-size: 13px;
     text-align: center;
     margin-bottom: 20px;
+<<<<<<< HEAD
     line-height: 1.4;
 }
 
@@ -427,12 +643,22 @@ input, select, textarea {
     margin-bottom: 10px;
 }
 
+=======
+}
+.apadrinhar-info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-left: 20px;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
 .apadrinhar-options {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+<<<<<<< HEAD
 }
 
 /* Responsividade */
@@ -497,3 +723,7 @@ button:focus, input:focus, select:focus, textarea:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+=======
+    margin-top: 30px;
+}
+>>>>>>> bf6c54d13872367630ece9923dc5d9effa48b5e5
