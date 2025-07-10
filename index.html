@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="tela-login" class="screen">
+        <header class="main-header">
+            <h1>ADOTE<br>PET</h1>
+        </header>
+        <main class="content">
+            <div class="login-form">
+                <a href="#tela-principal" class="button-like-input">Usuário</a>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="lembrar-usuario">
+                    <label for="lembrar-usuario">Lembrar usuário</label>
+                </div>
+                <a href="#tela-principal" class="button-like-input">Senha</a>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="lembrar-senha">
+                    <label for="lembrar-senha">Lembrar senha</label>
+                </div>
+                <button onclick="criarConta()" class="button-like-input">Criar conta</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="tela-principal" class="screen">
+        <header class="app-header">
+            <a href="#tela-login" class="back-link">&lt;</a>
+            <a href="#tela-perfil" class="profile-link">
+                <div class="profile-pic-initials">UB</div>
+                <span>Minha Conta</span>
+            </a>
+            <span class="app-title-corner">ADOTE<br>PET</span>
+        </header>
+        <main class="content">
+            <div class="menu-options">
+                <a href="#tela-adotar" class="menu-button">Quero Adotar</a>
+                <a href="#tela-divulgar" class="menu-button">Quero Divulgar</a>
+                <a href="#tela-apadrinhar" class="menu-button">Quero Apadrinhar</a>
+            </div>
+        </main>
+    </div>
+
+    <div id="tela-adotar" class="screen">
+         <header class="page-header">
+             <a href="#tela-principal" class="back-link">&lt;</a>
+             <h2>Quero adotar</h2>
+             <span class="app-title-corner">ADOTE<br>PET</span>
+         </header>
+        <div class="map-container">
+            <div class="search-bar">Buscar....</div>
+            <img src="mapa.png" alt="Mapa com pets para adoção" class="map-image">
+        </div>
+    </div>
+
+    <div id="tela-divulgar" class="screen">
+        <header class="page-header">
+            <a href="#tela-principal" class="back-link">&lt;</a>
+            <h2>Quero divulgar</h2>
+            <span class="app-title-corner">ADOTE<br>PET</span>
+        </header>
+        <main class="content-form">
+            <form class="divulgar-form">
+                <label for="nome-pet">Nome do bichinho*</label>
+                <input type="text" id="nome-pet" class="form-input">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="especie">Espécie*</label>
+                        <input type="text" id="especie" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo*</label>
+                        <input type="text" id="sexo" class="form-input">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="idade">Idade*</label>
+                        <input type="text" id="idade" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="porte">Porte*</label>
+                        <input type="text" id="porte" class="form-input">
+                    </div>
+                </div>
+                 <div class="form-row">
+                    <div class="form-group">
+                        <label for="estado">Estado*</label>
+                        <input type="text" id="estado" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade*</label>
+                        <input type="text" id="cidade" class="form-input">
+                    </div>
+                </div>
+
+                <label for="sobre-pet">Sobre o bichinho*</label>
+                <textarea id="sobre-pet" class="form-textarea"></textarea>
+
+                <label for="foto-pet">Foto principal*</label>
+                <div class="file-upload">
+                    <button type="button" class="file-button">Escolher ficheiro</button>
+                    <span>Nenhum ficheiro selecionado</span>
+                </div>
+
+                <a href="#tela-principal" class="submit-button">Salvar</a>
+            </form>
+        </main>
+    </div>
+
+    <div id="tela-apadrinhar" class="screen">
+        <header class="page-header">
+            <a href="#tela-principal" class="back-link">&lt;</a>
+            <h2>Quero Apadrinhar</h2>
+            <span class="app-title-corner">ADOTE<br>PET</span>
+        </header>
+        <main class="content-padding">
+            <p class="apadrinhar-intro">Para apadrinhar qualquer animal escolha uma opção:</p>
+            <ul class="apadrinhar-info">
+                <li>Básico – R$ 35,00 para ajudar na alimentação.</li>
+                <li>Médio – R$ 60,00 para ajudar na alimentação, vacinas e vermífugos.</li>
+                <li>Total – R$ 100,00 para ajudar na alimentação, vacinas e todos os gastos envolvidos...</li>
+                <li>Ou ainda como madrinha ou padrinho solidário, contribuindo com quanto puder ou desejar.</li>
+            </ul>
+            <div class="apadrinhar-options">
+                <a href="#" class="menu-button">Básico - R$ 35,00</a>
+                <a href="#" class="menu-button">Médio - R$ 60,00</a>
+                <a href="#" class="menu-button">Total - R$ 100,00</a>
+                <a href="#" class="menu-button">Outro Valor</a>
+            </div>
+        </main>
+    </div>
+
+    <div id="tela-perfil" class="screen">
+        <header class="app-header">
+            <a href="#tela-principal" class="back-link-profile">&lt;</a>
+            <div class="profile-link">
+                 <div class="profile-pic-initials">UB</div>
+                 <span>Minha Conta</span>
+            </div>
+            <span class="app-title-corner">ADOTE<br>PET</span>
+        </header>
+        <main class="content">
+            <h2 class="username">Nome do usuário</h2>
+            <div class="menu-options-profile">
+                <a href="#" class="menu-button-profile">Configurações de pagamento</a>
+                <a href="#" class="menu-button-profile">Informações de cadastro</a>
+                <a href="#" class="menu-button-profile">Alterar Senha</a>
+                <a href="#" class="menu-button-profile">Avaliar aplicativo</a>
+                <a href="#" class="menu-button-profile">Encerrar conta</a>
+                <a href="#tela-login" class="menu-button-profile">Sair</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function criarConta() {
+            const email = prompt('Digite seu e-mail para criar uma conta:');
+            if (email && email.includes('@')) {
+                alert('Instruções para criação da conta foram enviadas para ' + email + '. Verifique sua caixa de entrada.');
+            } else if (email) {
+                alert('Por favor, digite um e-mail válido.');
+            }
+        }
+    </script>
+</body>
+</html>
+

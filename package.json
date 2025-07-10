@@ -1,0 +1,27 @@
+{
+  "name": "adote-pet",
+  "version": "1.0.0",
+  "description": "Aplicativo web para adoção, divulgação e apadrinhamento de pets",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "pets",
+    "adoção",
+    "animais",
+    "apadrinhamento",
+    "static-site"
+  ],
+  "author": "AdotePet Team",
+  "license": "MIT",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/adote-pet.git"
+  }
+}
+
