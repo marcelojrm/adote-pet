@@ -62,7 +62,10 @@ input, select, textarea {
     align-items: flex-start;
     padding: 20px;
     gap: 15px;
+<<<<<<< HEAD
     position: relative;
+=======
+>>>>>>> 92ce9e7a1b5fee55be6ad5621b5fbe7920e89693
 }
 
 .page-header {
@@ -196,6 +199,7 @@ input, select, textarea {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 .profile-pic-initials {
     width: 70px;
     height: 70px;
@@ -210,6 +214,8 @@ input, select, textarea {
     border: 2px solid #999;
 }
 
+=======
+>>>>>>> 92ce9e7a1b5fee55be6ad5621b5fbe7920e89693
 .menu-options, .menu-options-profile {
     width: 100%;
     display: flex;
