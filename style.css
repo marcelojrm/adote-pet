@@ -1,4 +1,11 @@
 /* Reset e Estilos Globais */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 * {
     box-sizing: border-box;
 }
@@ -19,6 +26,23 @@ button {
 
 input, select, textarea {
     font-family: inherit;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #333; /* Fundo escuro para ver a área do app */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 /* Estrutura das Telas */
@@ -29,6 +53,13 @@ input, select, textarea {
     margin: 0 auto;
     min-height: 100vh;
     background-color: #99A892;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -41,11 +72,45 @@ input, select, textarea {
     display: flex;
     opacity: 1;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    display: flex;
+    flex-direction: column;
+}
+
+/* Lógica de Navegação: esconde todos... */
+body > .screen {
+    display: none;
+}
+/* ...e mostra apenas o ativo (target) ou o primeiro */
+.screen:target,
+body > .screen:first-of-type {
+    display: flex;
+}
+
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 
 /* Cabeçalhos */
 .main-header {
     text-align: center;
+<<<<<<< HEAD
     margin-top: 80px;
+=======
+<<<<<<< HEAD
+    margin-top: 80px;
+=======
+<<<<<<< HEAD
+    margin-top: 80px;
+=======
+    padding-top: 80px;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     margin-bottom: 50px;
 }
 
@@ -54,15 +119,45 @@ input, select, textarea {
     font-weight: 400;
     line-height: 1.2;
     color: #000;
+<<<<<<< HEAD
     margin: 0;
+=======
+<<<<<<< HEAD
+    margin: 0;
+=======
+<<<<<<< HEAD
+    margin: 0;
+=======
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .app-header {
     display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     align-items: flex-start;
     padding: 20px;
     gap: 15px;
     position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    align-items: center; /* AQUI: alinhamento vertical */
+    justify-content: space-between; /* AQUI: distribui o espaço */
+    padding: 20px;
+    gap: 15px;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .page-header {
@@ -70,10 +165,27 @@ input, select, textarea {
     align-items: center;
     padding: 15px 20px;
     color: black;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    gap: 15px;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .page-header h2 {
     margin: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     font-size: 16px;
     font-weight: 600;
     flex-grow: 1;
@@ -81,14 +193,45 @@ input, select, textarea {
     letter-spacing: 0.2em;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    flex-grow: 1; /* AQUI: faz o título empurrar o logo para a direita */
+}
+
+
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 /* Títulos de Canto */
 .app-title-corner {
     font-size: 10px;
     font-weight: 400;
     text-align: center;
     color: #000;
+<<<<<<< HEAD
     margin-left: auto;
     line-height: 1.2;
+=======
+<<<<<<< HEAD
+    margin-left: auto;
+    line-height: 1.2;
+=======
+<<<<<<< HEAD
+    margin-left: auto;
+    line-height: 1.2;
+=======
+    flex-shrink: 0; /* Impede que o logo seja espremido */
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 /* Conteúdo Principal */
@@ -99,11 +242,29 @@ input, select, textarea {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+<<<<<<< HEAD
     flex: 1;
+=======
+<<<<<<< HEAD
+    flex: 1;
+=======
+<<<<<<< HEAD
+    flex: 1;
+=======
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .content-padding {
     padding: 20px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     flex: 1;
 }
 
@@ -115,6 +276,25 @@ input, select, textarea {
     flex: 1;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+}
+
+.content-form {
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 /* Componentes Específicos */
 
 /* Tela de Login (Tela 1) */
@@ -126,6 +306,13 @@ input, select, textarea {
     gap: 15px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .input-field {
     background: #D9D9D9;
     border: none;
@@ -142,6 +329,15 @@ input, select, textarea {
 }
 
 .login-button, .create-account-button {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+.button-like-input {
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     background: #D9D9D9;
     border-radius: 12px;
     padding: 18px;
@@ -149,12 +345,27 @@ input, select, textarea {
     font-size: 14px;
     font-weight: 500;
     color: #000;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     width: 100%;
     transition: background-color 0.2s ease;
 }
 
 .login-button:hover, .create-account-button:hover {
     background: #c9c9c9;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .checkbox-container {
@@ -168,11 +379,26 @@ input, select, textarea {
 
 .checkbox-container label {
     font-size: 12px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     cursor: pointer;
 }
 
 .checkbox-container input[type="checkbox"] {
     cursor: pointer;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 /* Tela Principal (Tela 2) e Perfil (Tela 6) */
@@ -183,10 +409,26 @@ input, select, textarea {
     gap: 8px;
     font-size: 12px;
     font-weight: 500;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     background: none;
     border: none;
     cursor: pointer;
     color: inherit;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    flex-grow: 1; /* AQUI: Centraliza o item do meio */
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .profile-pic {
@@ -194,6 +436,13 @@ input, select, textarea {
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .profile-pic-initials {
@@ -210,26 +459,85 @@ input, select, textarea {
     border: 2px solid #999;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    background-color: #d9d9d9; /* Cor de fundo para o ícone */
+}
+
+.profile-header .profile-title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+.profile-pic-header {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #d9d9d9;
+}
+
+
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .menu-options, .menu-options-profile {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+<<<<<<< HEAD
+    margin-top: 30px;
+=======
+<<<<<<< HEAD
+    margin-top: 30px;
+=======
+    margin-top: 50px;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .menu-button, .menu-button-profile {
     width: 80%;
     max-width: 300px;
     background: #D9D9D9;
+<<<<<<< HEAD
     border: none;
+=======
+<<<<<<< HEAD
+    border: none;
+=======
+<<<<<<< HEAD
+    border: none;
+=======
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     border-radius: 12px;
     padding: 18px;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     color: black;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
@@ -241,18 +549,48 @@ input, select, textarea {
 
 .menu-button:active, .menu-button-profile:active {
     transform: translateY(0);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .username {
     font-size: 16px;
     font-weight: 400;
+<<<<<<< HEAD
     margin: 40px 0;
     text-align: center;
+=======
+<<<<<<< HEAD
+    margin: 40px 0;
+    text-align: center;
+=======
+<<<<<<< HEAD
+    margin: 40px 0;
+    text-align: center;
+=======
+    margin-top: 40px;
+    margin-bottom: 40px;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .menu-options-profile {
     gap: 15px;
     margin-top: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 .menu-button-profile {
@@ -282,21 +620,62 @@ input, select, textarea {
     top: 35px;
     left: 20px;
     margin-right: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu-button-profile {
+     width: 100%;
+     max-width: none;
+     border-radius: 8px;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 /* Tela de Adoção (Mapa - Tela 3) */
 .map-container {
     width: 100%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     height: calc(100vh - 60px);
     position: relative;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    flex-grow: 1;
+    position: relative;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .search-bar {
     position: absolute;
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     z-index: 10;
 }
 
@@ -314,17 +693,59 @@ input, select, textarea {
     color: #666;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    background: rgba(217, 217, 217, 0.8);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #333;
+    z-index: 10;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .map-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 /* Tela de Divulgação (Formulário - Tela 4) */
+=======
+<<<<<<< HEAD
+/* Tela de Divulgação (Formulário - Tela 4) */
+=======
+<<<<<<< HEAD
+/* Tela de Divulgação (Formulário - Tela 4) */
+=======
+
+/* Tela de Divulgação (Formulário - Tela 4) */
+.back-link {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    flex-shrink: 0;
+}
+
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .divulgar-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     padding-bottom: 20px;
 }
 
@@ -334,11 +755,32 @@ input, select, textarea {
     margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+}
+.divulgar-form label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .form-input, .form-textarea {
     width: 100%;
     background: #D9D9D9;
     border: none;
     border-radius: 12px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     padding: 12px;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -357,10 +799,33 @@ input, select, textarea {
     min-height: 80px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .form-row {
     display: flex;
     gap: 15px;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 
 .form-group {
     flex: 1;
@@ -368,19 +833,55 @@ input, select, textarea {
     flex-direction: column;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+.form-group {
+    flex: 1;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .file-upload {
     display: flex;
     align-items: center;
     gap: 10px;
     background: #D9D9D9;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     padding: 8px 12px;
     border-radius: 12px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .file-button {
     background-color: #aaa;
     color: black;
     border: none;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -400,6 +901,23 @@ input, select, textarea {
 .submit-button {
     background: #D9D9D9;
     border: none;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.file-upload span {
+    font-size: 12px;
+}
+.submit-button {
+    background: #D9D9D9;
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     border-radius: 12px;
     padding: 15px;
     text-align: center;
@@ -408,6 +926,13 @@ input, select, textarea {
     color: #000;
     width: 160px;
     margin: 20px auto;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
@@ -420,6 +945,16 @@ input, select, textarea {
 .submit-button:active {
     transform: translateY(0);
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+}
+
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 
 /* Tela de Apadrinhamento (Tela 5) */
 .apadrinhar-intro {
@@ -427,6 +962,13 @@ input, select, textarea {
     font-size: 13px;
     text-align: center;
     margin-bottom: 20px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
     line-height: 1.4;
 }
 
@@ -442,12 +984,34 @@ input, select, textarea {
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+}
+.apadrinhar-info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-left: 20px;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 .apadrinhar-options {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
 }
 
 /* Responsividade */
@@ -512,3 +1076,13 @@ button:focus, input:focus, select:focus, textarea:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    margin-top: 30px;
+}
+>>>>>>> e810347c11a8112f4034b8bafa31770912a8ac93
+>>>>>>> 7cf7e1986396d8195e3d0b934aadc16c6cbf057f
+>>>>>>> 7327bc77edf2f211369f193208efa4aef7401ae6
